@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nithya Sri | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+
+<!-- ================= TOAST NOTIFICATION ================= -->
+<div id="toast" class="toast">
+    <i class="fas fa-eye"></i>
+    <span id="toast-msg">Someone is viewing your portfolio!</span>
+</div>
+
+<!-- ================= HEADER ================= -->
+<header class="header">
+    <a href="#" class="logo">Nithya<span>Sri</span></a>
+    <i class="fa-solid fa-bars" id="menu-icon"></i>
+    <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- ================= HOME ================= -->
+<section class="home" id="home">
+    <div class="home-content">
+        <h3>Hello, I'm</h3>
+        <h1>Nithya Sri</h1>
+        <h3><span id="typing-text"></span><span class="cursor">|</span></h3>
+        <p>
+            Computer Science Engineering graduate passionate about building
+            responsive mobile applications using React Native, JavaScript,
+            HTML, CSS and REST APIs.
+        </p>
+        <div class="buttons">
+            <a href="C:\Users\nithy\Downloads\NithyasriResume_Jun26.pdf" class="btn" download>
+                <i class="fas fa-download"></i> Download Resume
+            </a>
+            <a href="#projects" class="btn btn-outline">
+                <i class="fas fa-rocket"></i> Projects
+            </a>
+        </div>
+        <div class="social-icons">
+            <a href="https://github.com/Nithyasri3032005/" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/nithya-sri-n-bb07a5416/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:nithyareactnativedev@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+    </div>
+    <div class="home-image">
+        <div class="image-wrapper">
+            <img src="nithya.jpg" alt="Profile">
+            <div class="image-ring"></div>
+            <div class="image-ring ring-2"></div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section class="about" id="about">
+    <h2 class="section-title">About Me</h2>
+    <div class="about-content">
+        <div class="about-text">
+            <p>
+                I am a passionate Computer Science Engineering graduate (2026)
+                with strong knowledge of HTML, CSS, JavaScript and React Native.
+                I enjoy building responsive mobile applications and continuously
+                improving my coding and problem-solving skills.
+                Currently preparing for Software Developer and
+                React Native Developer roles.
+            </p>
+            <div class="about-stats">
+                <div class="stat-card">
+                    <i class="fas fa-code"></i>
+                    <h4>4+</h4>
+                    <p>Projects</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-laptop-code"></i>
+                    <h4>2+</h4>
+                    <p>Years Learning</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-star"></i>
+                    <h4>5+</h4>
+                    <p>Technologies</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= SKILLS ================= -->
+<section class="skills" id="skills">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills-container">
+        <div class="skill-card" data-skill="HTML5">
+            <div class="skill-icon"><i class="fab fa-html5"></i></div>
+            <h3>HTML5</h3>
+            <div class="skill-bar"><div class="skill-progress" style="--progress:90%"></div></div>
+        </div>
+        <div class="skill-card" data-skill="CSS3">
+            <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+            <h3>CSS3</h3>
+            <div class="skill-bar"><div class="skill-progress" style="--progress:85%"></div></div>
+        </div>
+        <div class="skill-card" data-skill="JavaScript">
+            <div class="skill-icon"><i class="fab fa-js"></i></div>
+            <h3>JavaScript</h3>
+            <div class="skill-bar"><div class="skill-progress" style="--progress:80%"></div></div>
+        </div>
+        <div class="skill-card" data-skill="React Native">
+            <div class="skill-icon"><i class="fab fa-react"></i></div>
+            <h3>React Native</h3>
+            <div class="skill-bar"><div class="skill-progress" style="--progress:85%"></div></div>
+        </div>
+        <div class="skill-card" data-skill="Git">
+            <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+            <h3>Git</h3>
+            <div class="skill-bar"><div class="skill-progress" style="--progress:75%"></div></div>
+        </div>
+        <div class="skill-card" data-skill="GitHub">
+            <div class="skill-icon"><i class="fab fa-github"></i></div>
+            <h3>GitHub</h3>
+            <div class="skill-bar"><div class="skill-progress" style="--progress:80%"></div></div>
+        </div>
+        <div class="skill-card" data-skill="REST API">
+            <div class="skill-icon"><i class="fas fa-code"></i></div>
+            <h3>REST API</h3>
+            <div class="skill-bar"><div class="skill-progress" style="--progress:75%"></div></div>
+        </div>
+        <div class="skill-card" data-skill="Java">
+            <div class="skill-icon"><i class="fab fa-java"></i></div>
+            <h3>Basic Java</h3>
+            <div class="skill-bar"><div class="skill-progress" style="--progress:60%"></div></div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= PROJECTS ================= -->
+<section class="projects" id="projects">
+    <h2 class="section-title">Projects</h2>
+    <div class="project-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="mobile">Mobile</button>
+    </div>
+    <div class="project-container">
+
+        <div class="project-card" data-project="skycast" data-category="mobile">
+            <div class="project-image">
+                <img src="SkyCast.png" alt="SkyCast">
+                <div class="project-overlay">
+                    <button class="overlay-btn view-project" data-project="skycast">
+                        <i class="fas fa-expand"></i> View Details
+                    </button>
+                </div>
+            </div>
+            <div class="project-info">
+                <h3>SkyCast Weather App</h3>
+                <p>Weather application developed using React Native and Weather API.</p>
+                <div class="project-tags">
+                    <span>React Native</span>
+                    <span>API</span>
+                    <span>JavaScript</span>
+                </div>
+                <div class="project-buttons">
+                    <a href="https://github.com/Nithyasri3032005/SkyCast" target="_blank" class="btn btn-sm">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <button class="btn btn-sm btn-outline view-project" data-project="skycast">
+                        <i class="fas fa-play-circle"></i> Demo
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card" data-project="studyabroad" data-category="mobile">
+            <div class="project-image">
+                <img src="StudyAbroad.png" alt="StudyAbroad">
+                <div class="project-overlay">
+                    <button class="overlay-btn view-project" data-project="studyabroad">
+                        <i class="fas fa-expand"></i> View Details
+                    </button>
+                </div>
+            </div>
+            <div class="project-info">
+                <h3>Study Abroad</h3>
+                <p>A React Native app that helps students explore universities, courses, scholarships, and study abroad opportunities.</p>
+                <div class="project-tags">
+                    <span>React Native</span>
+                    <span>Firebase</span>
+                    <span>UI/UX</span>
+                </div>
+                <div class="project-buttons">
+                    <a href="https://github.com/Nithyasri3032005/StudyAbroadApp" target="_blank" class="btn btn-sm">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <button class="btn btn-sm btn-outline view-project" data-project="studyabroad">
+                        <i class="fas fa-play-circle"></i> Demo
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card" data-project="aichatbot" data-category="web">
+            <div class="project-image">
+                <img src="AIChatBot.png" alt="AI ChatBot">
+                <div class="project-overlay">
+                    <button class="overlay-btn view-project" data-project="aichatbot">
+                        <i class="fas fa-expand"></i> View Details
+                    </button>
+                </div>
+            </div>
+            <div class="project-info">
+                <h3>AI ChatBot</h3>
+                <p>Modern AI chatbot application with natural language processing capabilities.</p>
+                <div class="project-tags">
+                    <span>AI</span>
+                    <span>NLP</span>
+                    <span>Coming Soon</span>
+                </div>
+                <div class="project-buttons">
+                    <a href="https://github.com/Nithyasri3032005/" target="_blank" class="btn btn-sm">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <button class="btn btn-sm btn-outline" disabled>
+                        <i class="fas fa-clock"></i> Coming Soon
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card" data-project="calculator" data-category="web">
+            <div class="project-image">
+                <img src="calculas.png" alt="Scientific Calculator">
+                <div class="project-overlay">
+                    <button class="overlay-btn view-project" data-project="calculator">
+                        <i class="fas fa-expand"></i> View Details
+                    </button>
+                </div>
+            </div>
+            <div class="project-info">
+                <h3>Scientific Calculator</h3>
+                <p>A fully functional scientific calculator built with HTML, CSS, and JavaScript featuring a modern UI.</p>
+                <div class="project-tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>
+                <div class="project-buttons">
+                    <a href="https://github.com/Nithyasri3032005/Calculator-" target="_blank" class="btn btn-sm">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <button class="btn btn-sm btn-outline view-project" data-project="calculator">
+                        <i class="fas fa-play-circle"></i> Demo
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ================= PROJECT MODALS ================= -->
+
+<!-- SkyCast Modal -->
+<div class="modal" id="modal-skycast">
+    <div class="modal-content modal-video-view">
+        <button class="modal-close">×</button>
+        <div class="modal-body">
+            <h2>SkyCast Weather App</h2>
+            <div class="modal-image">
+                <video src="SkyCast.mp4" controls autoplay muted loop></video>
+            </div>
+            <p>
+                A feature-rich weather application built with React Native.
+                Get real-time weather data, forecasts, and beautiful weather
+                visualizations for any location worldwide.
+            </p>
+            <div class="modal-features">
+                <h4>Features</h4>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> Real-time weather data</li>
+                    <li><i class="fas fa-check-circle"></i> 7-day forecast</li>
+                    <li><i class="fas fa-check-circle"></i> Location search</li>
+                    <li><i class="fas fa-check-circle"></i> Beautiful weather animations</li>
+                </ul>
+            </div>
+            <div class="modal-tech">
+                <span>React Native</span>
+                <span>Weather API</span>
+                <span>JavaScript</span>
+            </div>
+            <div class="modal-buttons">
+                <a href="https://github.com/Nithyasri3032005/SkyCast" target="_blank" class="btn">
+                    <i class="fab fa-github"></i> View on GitHub
+                </a>
+                <a href="https://github.com/Nithyasri3032005/SkyCast" target="_blank" class="btn btn-outline">
+                    <i class="fas fa-external-link-alt"></i> Live Demo
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- StudyAbroad Modal -->
+<div class="modal" id="modal-studyabroad">
+    <div class="modal-content">
+        <button class="modal-close">×</button>
+        <div class="modal-body">
+            <h2>Study Abroad</h2>
+            <div class="modal-image">
+                <img src="StudyAbroad.png" alt="StudyAbroad">
+            </div>
+            <p>
+                A comprehensive React Native application designed to help students
+                explore international education opportunities, compare universities,
+                and find scholarships.
+            </p>
+            <div class="modal-features">
+                <h4>Features</h4>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> University explorer</li>
+                    <li><i class="fas fa-check-circle"></i> Scholarship finder</li>
+                    <li><i class="fas fa-check-circle"></i> Course comparison</li>
+                    <li><i class="fas fa-check-circle"></i> Student testimonials</li>
+                </ul>
+            </div>
+            <div class="modal-tech">
+                <span>React Native</span>
+                <span>Firebase</span>
+                <span>UI/UX Design</span>
+            </div>
+            <div class="modal-buttons">
+                <a href="https://github.com/Nithyasri3032005/StudyAbroadApp" target="_blank" class="btn">
+                    <i class="fab fa-github"></i> View on GitHub
+                </a>
+                <a href="https://github.com/Nithyasri3032005/StudyAbroadApp" target="_blank" class="btn btn-outline">
+                    <i class="fas fa-external-link-alt"></i> Live Demo
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- AI ChatBot Modal -->
+<div class="modal" id="modal-aichatbot">
+    <div class="modal-content">
+        <button class="modal-close">×</button>
+        <div class="modal-body">
+            <h2>AI ChatBot</h2>
+            <div class="modal-image">
+                <img src="AIChatBot.png" alt="AI ChatBot">
+            </div>
+            <p>
+                A modern AI-powered chatbot application featuring natural language
+                processing, intelligent responses, and a sleek conversational UI.
+                Currently in development.
+            </p>
+            <div class="modal-features">
+                <h4>Features</h4>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> Natural language processing</li>
+                    <li><i class="fas fa-check-circle"></i> Smart responses</li>
+                    <li><i class="fas fa-check-circle"></i> Chat history</li>
+                    <li><i class="fas fa-check-circle"></i> Coming Soon</li>
+                </ul>
+            </div>
+            <div class="modal-tech">
+                <span>AI/ML</span>
+                <span>NLP</span>
+                <span>React Native</span>
+            </div>
+            <div class="modal-buttons">
+                <a href="https://github.com/Nithyasri3032005/" target="_blank" class="btn">
+                    <i class="fab fa-github"></i> View on GitHub
+                </a>
+                <button class="btn btn-outline" disabled>
+                    <i class="fas fa-clock"></i> Coming Soon
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Calculator Modal -->
+<div class="modal" id="modal-calculator">
+    <div class="modal-content">
+        <button class="modal-close">×</button>
+        <div class="modal-body">
+            <h2>Scientific Calculator</h2>
+            <div class="modal-image">
+                <video src="calculator.mp4" controls autoplay muted loop></video>
+            </div>
+            <p>
+                A fully functional scientific calculator with a clean, modern interface.
+                Supports basic arithmetic operations as well as advanced scientific functions
+                like trigonometry, logarithms, and exponentiation.
+            </p>
+            <div class="modal-features">
+                <h4>Features</h4>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> Basic arithmetic operations</li>
+                    <li><i class="fas fa-check-circle"></i> Scientific functions (sin, cos, tan, log)</li>
+                    <li><i class="fas fa-check-circle"></i> Responsive design</li>
+                    <li><i class="fas fa-check-circle"></i> Keyboard support</li>
+                </ul>
+            </div>
+            <div class="modal-tech">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+            </div>
+            <div class="modal-buttons">
+                <a href="https://github.com/Nithyasri3032005/Calculator-" target="_blank" class="btn">
+                    <i class="fab fa-github"></i> View on GitHub
+                </a>
+                <a href="https://github.com/Nithyasri3032005/Calculator-" target="_blank" class="btn btn-outline">
+                    <i class="fas fa-external-link-alt"></i> Live Demo
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ================= EDUCATION ================= -->
+<section class="education" id="education">
+    <h2 class="section-title">Education</h2>
+    <div class="timeline">
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+                <div class="timeline-icon"><i class="fas fa-graduation-cap"></i></div>
+                <h3>B.E Computer Science Engineering</h3>
+                <p class="timeline-date"><i class="fas fa-calendar-alt"></i> 2022 - 2026</p>
+                <p>Passionate about building mobile applications and solving complex problems.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="contact" id="contact">
+    <h2 class="section-title">Contact Me</h2>
+    <div class="contact-wrapper">
+        <div class="contact-info">
+            <div class="contact-card">
+                <i class="fas fa-envelope"></i>
+                <h4>Email</h4>
+                <p>nithyareactnativedev@gmail.com</p>
+            </div>
+            <div class="contact-card">
+                <i class="fab fa-github"></i>
+                <h4>GitHub</h4>
+                <a href="https://github.com/Nithyasri3032005/" target="_blank">Nithyasri3032005</a>
+            </div>
+            <div class="contact-card">
+                <i class="fab fa-linkedin"></i>
+                <h4>LinkedIn</h4>
+                <a href="https://www.linkedin.com/in/nithya-sri-n-bb07a5416/" target="_blank">Nithya Sri</a>
+            </div>
+        </div>
+        <form id="contact-form" class="contact-form">
+            <div class="form-group">
+                <input type="text" name="from_name" placeholder="Your Name" required>
+                <i class="fas fa-user"></i>
+            </div>
+            <div class="form-group">
+                <input type="email" name="from_email" placeholder="Your Email" required>
+                <i class="fas fa-envelope"></i>
+            </div>
+            <div class="form-group">
+                <input type="text" name="subject" placeholder="Subject">
+                <i class="fas fa-tag"></i>
+            </div>
+            <div class="form-group">
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <i class="fas fa-comment"></i>
+            </div>
+            <button type="submit" class="btn btn-submit">
+                <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+            <div id="form-status" class="form-status"></div>
+        </form>
+    </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+    <div class="footer-content">
+        <a href="#" class="logo">Nithya<span>Sri</span></a>
+        <div class="footer-social">
+            <a href="https://github.com/Nithyasri3032005/" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/nithya-sri-n-bb07a5416/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:nithyareactnativedev@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+    </div>
+    <p>© 2026 Nithya Sri | Built using HTML, CSS & JavaScript</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
